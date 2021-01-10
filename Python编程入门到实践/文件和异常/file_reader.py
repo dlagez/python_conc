@@ -26,3 +26,30 @@ with open(filename) as f:
     lines = f.readlines()
 for line in lines:
     print(line.rstrip())
+
+filename = 'Python编程入门到实践/文件和异常/pi_digits.txt'
+with open(filename) as f:
+    lines = f.readlines()
+pi_strings = ''
+for line in lines:
+    pi_strings +=line.rstrip()
+    print(line.rstrip())
+
+print(pi_strings)
+print(len(pi_strings))
+
+
+filename = 'Python编程入门到实践/文件和异常/pi_digits.txt'
+with open(filename) as f:
+    lines = f.readlines()
+pi_strings = ''
+for line in lines:
+    pi_strings += line.strip()
+
+print(pi_strings[:52] + '...')
+print(len(pi_strings))
+
+
+filename = 'programming.txt'
+with open(filename, 'w') as f:
+    f.write("I love programming.")
