@@ -52,4 +52,10 @@ print(len(pi_strings))
 
 filename = 'programming.txt'
 with open(filename, 'w') as f:
-    f.write("I love programming.")
+    f.write("I love programming.\n")
+    f.write("I love creating new games.\n")
+
+filename = 'programming.txt'
+with open(filename, 'a') as f:
+    f.write("aaa")
+    f.write('CCC')
